@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "title": "Industry Solutions",
+    "subtitle": "Tailored reality capture for mission-critical applications"
+  },
+  "industries": [
+    {
+      "title": "Public Works & Infrastructure",
+      "icon": "🏗️",
+      "description": "Comprehensive asset management and infrastructure inventory solutions for municipal operations.",
+      "capabilities": [
+        "Road and pavement condition assessment",
+        "Bridge and culvert inspection",
+        "Sidewalk and curb inventory",
+        "Storm drain mapping",
+        "Right-of-way documentation"
+      ],
+      "benefits": [
+        "Reduce field time by 80%",
+        "Complete coverage of all assets",
+        "Historical change detection",
+        "Integration with asset management systems"
+      ]
+    },
+    {
+      "title": "Utilities & Energy",
+      "icon": "⚡",
+      "description": "Network mapping and asset tracking for electric, fiber, water, and gas distribution systems.",
+      "capabilities": [
+        "Pole and tower inventory",
+        "Underground utility mapping",
+        "Fiber optic network documentation",
+        "Distribution line inspection",
+        "Substation and facility mapping"
+      ],
+      "benefits": [
+        "Accurate as-built documentation",
+        "Reduce locate requests",
+        "Improved outage response",
+        "Regulatory compliance support"
+      ]
+    },
+    {
+      "title": "Public Safety & Emergency Services",
+      "icon": "🚨",
+      "description": "Pre-incident planning and facility floor plans for first responders.",
+      "capabilities": [
+        "Building interior mapping",
+        "Floor plan generation",
+        "Critical infrastructure documentation",
+        "Hazard identification",
+        "Access route planning"
+      ],
+      "benefits": [
+        "Improved situational awareness",
+        "Faster emergency response",
+        "Enhanced responder safety",
+        "Reduced liability"
+      ]
+    },
+    {
+      "title": "Facilities & Property Management",
+      "icon": "🏢",
+      "description": "Comprehensive property documentation and asset tracking for facilities management.",
+      "capabilities": [
+        "Interior and exterior documentation",
+        "Space planning and utilization",
+        "Maintenance planning",
+        "Lease documentation",
+        "Capital improvement tracking"
+      ],
+      "benefits": [
+        "Centralized facility data",
+        "Remote inspection capability",
+        "Improved space management",
+        "Better maintenance planning"
+      ]
+    },
+    {
+      "title": "Construction & Engineering",
+      "icon": "👷",
+      "description": "As-built documentation and progress tracking for construction projects.",
+      "capabilities": [
+        "Site documentation",
+        "Progress monitoring",
+        "As-built verification",
+        "Quality control",
+        "Quantity takeoffs"
+      ],
+      "benefits": [
+        "Accurate project records",
+        "Reduced rework",
+        "Improved communication",
+        "Enhanced project delivery"
+      ]
+    },
+    {
+      "title": "Telecom & Smart Cities",
+      "icon": "📡",
+      "description": "Infrastructure mapping for telecommunications and smart city deployments.",
+      "capabilities": [
+        "5G site planning",
+        "Small cell deployment",
+        "Fiber network mapping",
+        "IoT sensor placement",
+        "Coverage analysis"
+      ],
+      "benefits": [
+        "Accelerated deployments",
+        "Reduced site acquisition costs",
+        "Improved network design",
+        "Better coverage planning"
+      ]
+    }
+  ]
+}

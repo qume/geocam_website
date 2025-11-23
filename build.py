@@ -105,6 +105,12 @@ class SiteBuilder:
             content = self.render_product(page_data)
         elif template_name == 'data.html':
             content = self.render_data(page_data)
+        elif template_name == 'industries.html':
+            content = self.render_industries(page_data)
+        elif template_name == 'events.html':
+            content = self.render_events(page_data)
+        elif template_name == 'contact.html':
+            content = self.render_contact(page_data)
         else:
             content = ""
 
@@ -377,6 +383,205 @@ class SiteBuilder:
         </section>
         '''
 
+    def render_industries(self, data):
+        """Render industries page content"""
+        hero = data['hero']
+        industries = data['industries']
+
+        industries_html = []
+        for industry in industries:
+            capabilities_list = ''.join([f'<li>{cap}</li>' for cap in industry['capabilities']])
+            benefits_list = ''.join([f'<li>{ben}</li>' for ben in industry['benefits']])
+
+            industries_html.append(f'''
+                <div class="industry-detail">
+                    <div class="industry-header">
+                        <div class="industry-icon-large">{industry['icon']}</div>
+                        <div>
+                            <h3>{industry['title']}</h3>
+                            <p class="industry-lead">{industry['description']}</p>
+                        </div>
+                    </div>
+                    <div class="industry-content">
+                        <div class="industry-section">
+                            <h4>Capabilities</h4>
+                            <ul class="industry-list">
+                                {capabilities_list}
+                            </ul>
+                        </div>
+                        <div class="industry-section">
+                            <h4>Benefits</h4>
+                            <ul class="industry-list">
+                                {benefits_list}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            ''')
+
+        return f'''
+        <section class="page-hero">
+            <div class="container">
+                <h1>{hero['title']}</h1>
+                <p class="page-subtitle">{hero['subtitle']}</p>
+            </div>
+        </section>
+
+        <section class="industries-detail">
+            <div class="container">
+                {''.join(industries_html)}
+            </div>
+        </section>
+        '''
+
+    def render_events(self, data):
+        """Render events page content"""
+        hero = data['hero']
+        intro = data['intro']
+        upcoming = data['upcoming']
+        cta = data['cta']
+
+        events_html = []
+        for event in upcoming:
+            highlights_list = ''.join([f'<li>{h}</li>' for h in event['highlights']])
+
+            events_html.append(f'''
+                <div class="event-detail">
+                    <div class="event-header">
+                        <h3>{event['name']}</h3>
+                        <div class="event-meta">
+                            <span class="event-dates">📅 {event['dates']}</span>
+                            <span class="event-location">📍 {event['location']}</span>
+                        </div>
+                    </div>
+                    <p class="event-venue">{event['venue']}</p>
+                    <p class="event-description">{event['description']}</p>
+                    <div class="event-highlights">
+                        <h4>Event Highlights</h4>
+                        <ul>
+                            {highlights_list}
+                        </ul>
+                    </div>
+                </div>
+            ''')
+
+        return f'''
+        <section class="page-hero">
+            <div class="container">
+                <h1>{hero['title']}</h1>
+                <p class="page-subtitle">{hero['subtitle']}</p>
+            </div>
+        </section>
+
+        <section class="events-intro">
+            <div class="container">
+                <p class="intro-text">{intro}</p>
+            </div>
+        </section>
+
+        <section class="events-list-section">
+            <div class="container">
+                {''.join(events_html)}
+            </div>
+        </section>
+
+        <section class="events-cta">
+            <div class="container">
+                <h2>{cta['title']}</h2>
+                <p>{cta['description']}</p>
+                <a href="{cta['buttonLink']}" class="btn btn-primary">{cta['buttonText']}</a>
+            </div>
+        </section>
+        '''
+
+    def render_contact(self, data):
+        """Render contact page content"""
+        hero = data['hero']
+        intro = data['intro']
+        methods = data['methods']
+        form = data['form']
+        locations = data['locations']
+
+        methods_html = []
+        for method in methods:
+            methods_html.append(f'''
+                <div class="contact-method">
+                    <div class="contact-icon">{method['icon']}</div>
+                    <h3>{method['title']}</h3>
+                    <p>{method['description']}</p>
+                    <a href="{method['link']}" class="contact-link">{method['contact']}</a>
+                </div>
+            ''')
+
+        # Form fields
+        fields_html = []
+        for field in form['fields']:
+            if field['type'] == 'textarea':
+                fields_html.append(f'''
+                    <div class="form-group">
+                        <label for="{field['name']}">{field['label']}{"*" if field['required'] else ""}</label>
+                        <textarea id="{field['name']}" name="{field['name']}" rows="5" {"required" if field['required'] else ""}></textarea>
+                    </div>
+                ''')
+            elif field['type'] == 'select':
+                options = ''.join([f'<option value="{opt}">{opt}</option>' for opt in field['options']])
+                fields_html.append(f'''
+                    <div class="form-group">
+                        <label for="{field['name']}">{field['label']}{"*" if field['required'] else ""}</label>
+                        <select id="{field['name']}" name="{field['name']}" {"required" if field['required'] else ""}>
+                            <option value="">Select an option...</option>
+                            {options}
+                        </select>
+                    </div>
+                ''')
+            else:
+                fields_html.append(f'''
+                    <div class="form-group">
+                        <label for="{field['name']}">{field['label']}{"*" if field['required'] else ""}</label>
+                        <input type="{field['type']}" id="{field['name']}" name="{field['name']}" {"required" if field['required'] else ""}>
+                    </div>
+                ''')
+
+        return f'''
+        <section class="page-hero">
+            <div class="container">
+                <h1>{hero['title']}</h1>
+                <p class="page-subtitle">{hero['subtitle']}</p>
+            </div>
+        </section>
+
+        <section class="contact-intro">
+            <div class="container">
+                <p class="intro-text">{intro}</p>
+            </div>
+        </section>
+
+        <section class="contact-methods">
+            <div class="container">
+                <div class="methods-grid">
+                    {''.join(methods_html)}
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>{form['title']}</h2>
+                    <form class="contact-form" id="contactForm">
+                        {''.join(fields_html)}
+                        <button type="submit" class="btn btn-primary">{form['submitText']}</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>{locations['title']}</h3>
+                    <p><strong>Timezone:</strong> {locations['timezone']}</p>
+                    <p><strong>Hours:</strong> {locations['hours']}</p>
+                </div>
+            </div>
+        </section>
+        '''
+
     def copy_assets(self):
         """Copy CSS and other assets to output directory"""
         print("Copying assets...")
@@ -397,6 +602,9 @@ class SiteBuilder:
         self.build_page('home.html', 'home.json', 'index.html', 'index.html')
         self.build_page('product.html', 'product.json', 'product.html', 'product.html')
         self.build_page('data.html', 'data.json', 'data.html', 'data.html')
+        self.build_page('industries.html', 'industries.json', 'industries.html', 'industries.html')
+        self.build_page('events.html', 'events.json', 'events.html', 'events.html')
+        self.build_page('contact.html', 'contact.json', 'contact.html', 'contact.html')
 
         # Copy assets
         self.copy_assets()
