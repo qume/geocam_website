@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Data & Deliverables",
+    "subtitle": "Professional geospatial products for any use case"
+  },
+  "overview": {
+    "title": "What We Deliver",
+    "description": "GeoCam provides reality capture data, maps, CAD drawings, and related geospatial products. Create map features from oriented imagery and integrate seamlessly with Esri ArcGIS Feature Services."
+  },
+  "capabilities": {
+    "title": "Map Data Creation",
+    "subtitle": "Create features into almost any data model",
+    "applications": [
+      {
+        "title": "Public Works Assets",
+        "description": "Comprehensive asset inventory and utility network mapping",
+        "icon": "🏗️"
+      },
+      {
+        "title": "Public Safety Pre-Plans",
+        "description": "Emergency response planning with detailed floor plans",
+        "icon": "🚨"
+      },
+      {
+        "title": "Facilities Management",
+        "description": "Asset tracking and property management systems",
+        "icon": "🏢"
+      },
+      {
+        "title": "Telecom Infrastructure",
+        "description": "Fiber network documentation and planning",
+        "icon": "📡"
+      },
+      {
+        "title": "Electric Distribution",
+        "description": "Power grid mapping and asset management",
+        "icon": "⚡"
+      },
+      {
+        "title": "Smart City Assets",
+        "description": "Streetlight and traffic signal inventories",
+        "icon": "💡"
+      }
+    ]
+  },
+  "3d": {
+    "title": "3D Processing",
+    "subtitle": "Complete 3D deliverables package",
+    "outputs": [
+      {
+        "title": "3D Textured Meshes",
+        "description": "Photo-realistic 3D models for visualization and analysis"
+      },
+      {
+        "title": "Point Clouds",
+        "description": "Dense point cloud data for detailed measurements"
+      },
+      {
+        "title": "Orthorenders",
+        "description": "Orthographic projections for planning and design"
+      }
+    ]
+  },
+  "services": {
+    "title": "Custom Data Services",
+    "description": "Professional map and CAD data production at almost any Level of Detail (LOD)",
+    "benefits": [
+      "Flexible project scoping",
+      "Scalable solutions",
+      "Custom data models",
+      "Professional quality assurance"
+    ]
+  },
+  "integration": {
+    "title": "Enterprise Integration",
+    "description": "Direct integration with Esri ArcGIS and other enterprise GIS platforms",
+    "features": [
+      "ArcGIS Feature Services",
+      "ArcGIS Web Maps",
+      "API access",
+      "Custom workflows"
+    ]
+  }
+}

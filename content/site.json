@@ -1,0 +1,34 @@
+{
+  "siteName": "GeoCam",
+  "tagline": "AI-Native Reality Capture Platform",
+  "description": "The first AI-powered Visual Positioning Engine for rapid mapping across aerial, street, and indoor environments",
+  "contact": {
+    "email": "info@geocam.xyz",
+    "newsletter": true
+  },
+  "navigation": [
+    {"name": "Home", "href": "index.html"},
+    {"name": "Product", "href": "product.html"},
+    {"name": "Data", "href": "data.html"},
+    {"name": "Industries", "href": "industries.html"},
+    {"name": "Events", "href": "events.html"},
+    {"name": "Contact", "href": "contact.html"}
+  ],
+  "events": [
+    {
+      "name": "GEOINT Symposium",
+      "dates": "May 18-21, 2025",
+      "location": "St. Louis, MO"
+    },
+    {
+      "name": "5x5 Public Safety Innovation Summit",
+      "dates": "June 3-5, 2025",
+      "location": "Seattle/Bellevue, WA"
+    },
+    {
+      "name": "Esri UC 2025",
+      "dates": "July 14-18, 2025",
+      "location": "San Diego, CA"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "The First AI-Native Reality Capture Platform",
+    "subtitle": "AI-powered Visual Positioning Engine for rapid mapping without LiDAR",
+    "description": "GeoCam delivers high-accuracy map data across aerial, urban, suburban, rural, indoor, and complex construction environments.",
+    "cta": {
+      "primary": {"text": "Explore Our Platform", "href": "product.html"},
+      "secondary": {"text": "See Data Examples", "href": "data.html"}
+    }
+  },
+  "workflow": {
+    "title": "Streamlined Workflow",
+    "subtitle": "From capture to delivery in three simple stages",
+    "steps": [
+      {
+        "title": "Manage",
+        "description": "Organize captured data, create projects, and manage team resources efficiently",
+        "icon": "📋"
+      },
+      {
+        "title": "Process",
+        "description": "Convert imagery to usable formats with our AI-powered Visual Positioning System",
+        "icon": "⚙️"
+      },
+      {
+        "title": "Create",
+        "description": "Generate final map products, CAD data, and 3D models ready for deployment",
+        "icon": "🗺️"
+      }
+    ]
+  },
+  "deployment": {
+    "title": "Flexible Data Collection",
+    "subtitle": "Capture reality from any perspective",
+    "methods": [
+      {
+        "title": "Aerial",
+        "description": "Drone-mounted 360° imagery at high altitudes for comprehensive coverage"
+      },
+      {
+        "title": "Street-Level",
+        "description": "Vehicle-mounted surveys operating at highway speeds up to 75 MPH"
+      },
+      {
+        "title": "Indoor",
+        "description": "Backpack or handheld walkthroughs at 5 FPS for facilities and confined spaces"
+      },
+      {
+        "title": "Platform Fusion",
+        "description": "Unified scenes combining multiple capture methods for complete coverage"
+      }
+    ]
+  },
+  "industries": {
+    "title": "Industry Applications",
+    "subtitle": "Trusted by utilities, government, and enterprise",
+    "sectors": [
+      {
+        "title": "Public Works",
+        "description": "Asset management and infrastructure inventory",
+        "icon": "🏗️"
+      },
+      {
+        "title": "Utilities",
+        "description": "Electric, fiber, water, and gas network mapping",
+        "icon": "⚡"
+      },
+      {
+        "title": "Emergency Services",
+        "description": "Pre-planning and facility floor plans",
+        "icon": "🚨"
+      },
+      {
+        "title": "Facilities",
+        "description": "Property assessments and asset tracking",
+        "icon": "🏢"
+      },
+      {
+        "title": "Construction",
+        "description": "As-built documentation and progress tracking",
+        "icon": "👷"
+      }
+    ]
+  }
+}
