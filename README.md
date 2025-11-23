@@ -142,6 +142,41 @@ geocam_website/
 - Safari (last 2 versions)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
+## Adding Images
+
+### Image Storage
+
+Store images in `src/images/` directory:
+```
+src/
+  images/
+    hardware/
+      geocam-360.jpg
+      device-mounted.jpg
+    screenshots/
+      manager.png
+      editor.png
+    logos/
+      logo.svg
+```
+
+### Using Images in Content
+
+Reference images in your JSON files:
+```json
+{
+  "image": "assets/images/hardware/geocam-360.jpg",
+  "alt": "GeoCam 360 Camera Device"
+}
+```
+
+### Optimizing Images
+
+Before adding images:
+1. Resize to appropriate dimensions (max 1920px width for full-width images)
+2. Compress using tools like TinyPNG or ImageOptim
+3. Use WebP format for better compression (with JPG/PNG fallbacks)
+
 ## Customization
 
 ### Adding a New Page

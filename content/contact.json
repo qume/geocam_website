@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "title": "Get in Touch",
+    "subtitle": "Let's discuss how GeoCam can transform your workflows"
+  },
+  "intro": "Whether you're looking for a demo, have technical questions, or want to discuss a project, our team is here to help.",
+  "methods": [
+    {
+      "icon": "📧",
+      "title": "Email Us",
+      "description": "For general inquiries and support",
+      "contact": "info@geocam.xyz",
+      "link": "mailto:info@geocam.xyz"
+    },
+    {
+      "icon": "💼",
+      "title": "Sales Inquiries",
+      "description": "Discuss solutions for your organization",
+      "contact": "Schedule a consultation",
+      "link": "mailto:info@geocam.xyz?subject=Sales%20Inquiry"
+    },
+    {
+      "icon": "🛠️",
+      "title": "Technical Support",
+      "description": "Get help with your GeoCam system",
+      "contact": "Contact support",
+      "link": "mailto:info@geocam.xyz?subject=Technical%20Support"
+    }
+  ],
+  "form": {
+    "title": "Send Us a Message",
+    "fields": [
+      {"name": "name", "label": "Name", "type": "text", "required": true},
+      {"name": "email", "label": "Email", "type": "email", "required": true},
+      {"name": "organization", "label": "Organization", "type": "text", "required": false},
+      {"name": "phone", "label": "Phone", "type": "tel", "required": false},
+      {"name": "interest", "label": "I'm interested in", "type": "select", "required": true, "options": [
+        "Product Demo",
+        "Pricing Information",
+        "Technical Discussion",
+        "Partnership Opportunities",
+        "Other"
+      ]},
+      {"name": "message", "label": "Message", "type": "textarea", "required": true}
+    ],
+    "submitText": "Send Message"
+  },
+  "locations": {
+    "title": "Our Location",
+    "timezone": "Pacific Time (US)",
+    "hours": "Monday - Friday: 8:00 AM - 5:00 PM PT"
+  }
+}

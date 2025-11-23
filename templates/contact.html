@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - {{SITE_NAME}}</title>
+    <meta name="description" content="Contact GeoCam for demos, technical support, or sales inquiries.">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">{{SITE_NAME}}</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu">
+                {{NAVIGATION}}
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {{CONTENT}}
+    </main>
+
+    {{FOOTER}}
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

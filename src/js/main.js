@@ -107,6 +107,24 @@
         }
     };
 
+    // Contact Form Handler
+    const initContactForm = () => {
+        const form = document.querySelector('#contactForm');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+
+                // Here you would typically send to a backend service
+                // For now, show a confirmation
+                alert(`Thank you for your message, ${data.name}!\n\nWe'll get back to you at ${data.email} shortly.\n\nThis is a demo. In production, this would connect to your contact form service.`);
+                form.reset();
+            });
+        }
+    };
+
     // Add navbar background on scroll
     const initNavbarScroll = () => {
         const navbar = document.querySelector('.navbar');
@@ -131,6 +149,7 @@
         initSmoothScroll();
         initScrollAnimations();
         initNewsletterForm();
+        initContactForm();
         initNavbarScroll();
 
         // Log successful initialization

@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Events & Conferences",
+    "subtitle": "Meet the GeoCam team at upcoming industry events"
+  },
+  "intro": "Join us at leading geospatial, public safety, and infrastructure conferences. Stop by our booth for live demos, technical discussions, and to see how GeoCam can transform your workflows.",
+  "upcoming": [
+    {
+      "name": "GEOINT Symposium",
+      "dates": "May 18-21, 2025",
+      "location": "St. Louis, MO",
+      "venue": "America's Center Convention Complex",
+      "description": "The nation's largest gathering of geospatial intelligence professionals. Join us for demos of our AI-powered Visual Positioning System and learn how GeoCam is revolutionizing reality capture.",
+      "highlights": [
+        "Live hardware demonstrations",
+        "Technical presentations",
+        "One-on-one consultations",
+        "Special show pricing"
+      ]
+    },
+    {
+      "name": "5x5 Public Safety Innovation Summit",
+      "dates": "June 3-5, 2025",
+      "location": "Seattle/Bellevue, WA",
+      "venue": "Meydenbauer Center",
+      "description": "Focused on innovation in public safety technology. See how GeoCam enables faster emergency response through pre-incident planning and facility mapping.",
+      "highlights": [
+        "Pre-planning solution demos",
+        "Case studies from fire departments",
+        "Floor plan generation showcase",
+        "Networking with public safety leaders"
+      ]
+    },
+    {
+      "name": "Esri UC 2025",
+      "dates": "July 14-18, 2025",
+      "location": "San Diego, CA",
+      "venue": "San Diego Convention Center",
+      "description": "The premier GIS event of the year. Discover our seamless ArcGIS integration and see how GeoCam data powers enterprise GIS workflows.",
+      "highlights": [
+        "ArcGIS integration demonstrations",
+        "Technical workshops",
+        "User success stories",
+        "Product roadmap preview"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Schedule a Meeting",
+    "description": "Want to meet with our team at one of these events? Contact us to schedule a demo or technical discussion.",
+    "buttonText": "Contact Us",
+    "buttonLink": "contact.html"
+  }
+}
