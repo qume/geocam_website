@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "title": "GeoCam Platform",
+    "subtitle": "Complete hardware and software ecosystem for reality capture"
+  },
+  "hardware": {
+    "title": "GeoCam 360 Device",
+    "subtitle": "Professional-grade capture hardware",
+    "features": [
+      {
+        "title": "360° Global Shutter Imaging",
+        "description": "36 MP sensors capture comprehensive aerial and ground-level views without motion blur"
+      },
+      {
+        "title": "High-Precision GNSS",
+        "description": "Integrated positioning for survey-grade location accuracy"
+      },
+      {
+        "title": "Onboard AI Processing",
+        "description": "NVIDIA GPU enables real-time machine learning privacy filtering"
+      },
+      {
+        "title": "Solid-State Storage",
+        "description": "Built-in storage for reliable data retention in demanding environments"
+      },
+      {
+        "title": "Extended Battery Life",
+        "description": "TSA-approved external battery for all-day operations"
+      },
+      {
+        "title": "High-Speed Operation",
+        "description": "Highway speeds up to 75 MPH, 5 FPS capture indoors"
+      }
+    ],
+    "deployment": {
+      "title": "Flexible Deployment",
+      "description": "Compatible with drones, vehicles, backpack mounting, and confined space exploration"
+    }
+  },
+  "vps": {
+    "title": "Visual Positioning System",
+    "subtitle": "AI-driven mapping solution",
+    "description": "GeoCam VPS delivers high-accuracy map data across aerial, urban, suburban, rural, indoor, or complex construction scenarios using advanced computer vision and machine learning algorithms.",
+    "capabilities": [
+      "No LiDAR required for rapid mapping",
+      "AI-powered feature extraction",
+      "Multi-environment processing",
+      "Automated quality control"
+    ]
+  },
+  "software": {
+    "title": "Software Suite",
+    "subtitle": "End-to-end workflow management",
+    "applications": [
+      {
+        "name": "GeoCam Manager",
+        "description": "Project creation, team organization, resource tracking, and processing workflow management",
+        "features": [
+          "Project dashboard",
+          "Team collaboration",
+          "Resource allocation",
+          "Processing queue management"
+        ]
+      },
+      {
+        "name": "GeoCam Editor",
+        "description": "Web-based map creation tool with single-click mode for swift map data creation",
+        "features": [
+          "Intuitive web interface",
+          "Direct ArcGIS integration",
+          "Rapid feature creation",
+          "Custom data models"
+        ]
+      },
+      {
+        "name": "GeoCam QAQC",
+        "description": "Quality assurance platform for reviewing and correcting feature attributes and classifications",
+        "features": [
+          "Automated validation",
+          "Attribute correction",
+          "Classification review",
+          "Quality metrics"
+        ]
+      },
+      {
+        "name": "GeoCam Viewer",
+        "description": "Collaborative imagery viewing with ArcGIS Web Map integration",
+        "features": [
+          "360° imagery navigation",
+          "Location-based browsing",
+          "Team collaboration",
+          "Web map integration"
+        ]
+      },
+      {
+        "name": "GeoCam PII",
+        "description": "Privacy protection using machine learning to blur vehicles and people",
+        "features": [
+          "Automated detection",
+          "Flexible deployment (server, device, or hybrid)",
+          "Compliance support",
+          "Customizable filters"
+        ]
+      }
+    ]
+  }
+}
