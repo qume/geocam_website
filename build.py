@@ -136,8 +136,12 @@ class SiteBuilder:
         # Workflow steps
         workflow_html = []
         for step in workflow['steps']:
+            image_html = ''
+            if 'image' in step:
+                image_html = f'<img src="{step["image"]["src"]}" alt="{step["image"]["alt"]}" class="workflow-image">'
             workflow_html.append(f'''
                 <div class="workflow-step">
+                    {image_html}
                     <div class="step-icon">{step['icon']}</div>
                     <h3>{step['title']}</h3>
                     <p>{step['description']}</p>
@@ -165,6 +169,20 @@ class SiteBuilder:
                 </div>
             ''')
 
+        # Hero images
+        hero_images_html = ''
+        if 'images' in hero:
+            hero_images_html = f'''
+                <div class="hero-images">
+                    <div class="hero-image-device">
+                        <img src="{hero['images']['device']['src']}" alt="{hero['images']['device']['alt']}">
+                    </div>
+                    <div class="hero-image-aerial">
+                        <img src="{hero['images']['aerial']['src']}" alt="{hero['images']['aerial']['alt']}">
+                    </div>
+                </div>
+            '''
+
         return f'''
         <section class="hero">
             <div class="container">
@@ -177,6 +195,7 @@ class SiteBuilder:
                         <a href="{hero['cta']['secondary']['href']}" class="btn btn-secondary">{hero['cta']['secondary']['text']}</a>
                     </div>
                 </div>
+                {hero_images_html}
             </div>
         </section>
 
